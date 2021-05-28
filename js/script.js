@@ -2,19 +2,25 @@
 // per il computer. Stabilire il vincitore, in base a chi fa il 
 // punteggio più alto.
 
-// 1 generare 2 numeri random 
-var utente = Math.floor(Math.random()*5+1);
 
-var pc = Math.floor(Math.random()*5+1);
+function funzioneRandom(){
+    var bottone = document.getElementById('testButton')
+    
 
-// condizioni
-if (utente > pc){
-    messaggio = 'Complimenti, hai vinto!'
-} else if (utente == pc){
-    messaggio = 'Pareggio!'
-} else {
-    messaggio = 'Hai perso.'
+    // 1 generare 2 numeri random 
+    var utente = Math.floor(Math.random()*6+1);
+
+    var pc = Math.floor(Math.random()*6+1);
+
+    // condizioni
+    if (utente > pc){
+        messaggio = 'Complimenti! Hai vinto';
+    } else if (utente == pc){
+        messaggio = 'Pareggio! Riprova';
+    } else {
+        messaggio = 'Hai perso.';
+    }
+
+    // a video
+    document.getElementById('esito').innerHTML = messaggio;
 }
-
-// a video
-document.getElementById('esito').innerHTML = messaggio
