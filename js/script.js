@@ -3,7 +3,7 @@
 // punteggio più alto.
 
 
-function Gioca(){  
+// function Gioca(){  
     // 1 generare 2 numeri random 
     var utente = Math.floor(Math.random()*6+1);
 
@@ -20,4 +20,4 @@ function Gioca(){
 
     // a video
     document.getElementById('esito').innerHTML = messaggio;
-}
+// }
