@@ -4,6 +4,7 @@
 
 // 1 generare 2 numeri random 
 var utente = Math.floor(Math.random()*5+1);
+
 var pc = Math.floor(Math.random()*5+1);
 
 // condizioni
@@ -14,3 +15,6 @@ if (utente > pc){
 } else {
     messaggio = 'Hai perso.'
 }
+
+// a video
+document.getElementById('esito').innerHTML = messaggio
