@@ -3,10 +3,7 @@
 // punteggio più alto.
 
 
-function funzioneRandom(){
-    var bottone = document.getElementById('testButton')
-    
-
+function Gioca(){  
     // 1 generare 2 numeri random 
     var utente = Math.floor(Math.random()*6+1);
 
